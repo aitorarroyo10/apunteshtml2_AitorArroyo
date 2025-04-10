@@ -283,6 +283,58 @@
                         <p>Selector de id: Corresponde a todos los elementos HTML que tienen un atributo con id con el valor especificado. Afectará al elemento con atributo ID que coincida con el selector, por lo que afectaría al siguiente elemento HTML:</p>
                         
                         <p>p id="ejemplo"</p>
+
+            <br>
+
+            <br>
+
+            <h2 id="ApartadoResponsive">Responsive: Diseño y mediaquery</h2>
+
+                <h3>Diseño responsive</h3>
+
+                    <p>El diseño web responsive o adaptativo es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos. Desde ordenadores de escritorio a tablets y móviles.</p>
+
+                <h3>Mediaquery</h3>
+
+                    <p>Media query es una técnica CSS introducida mediante la cual se usa la regla @media para incluir un bloque de propiedades CSS solo si una cierta condición es cierta.</p>
+
+                    <p>Por ejemplo, si la ventana del navegador es 600px o más pequeña, el color del fondo será azul:</p>
+                        
+                        <p>@media only screen and (max-width: 600px) {
+                           body {
+                              background-color: lightblue;
+                           }
+                        }</p>
+                        
+                        <p>Es decir, media queries pueden añadir un punto de corte donde ciertas partes del diseño tengan un comportamiento completamente diferente a cada lado del punto de evaluación.</p>
+
+                            <img src="imgs/responsive.png" alt="responsive" width="500px">
+
+                    <p>Por ejemplo, cuando la pantalla tenga una resolución de 600 píxeles</p>
+                    
+                    <p>@media only screen and (max-width: 600px) {
+                        /* column-2 pasará de tener 50% a 100% */
+                        .column-2{
+                            width: 100%;
+                        }
+                        /* column-3 pasará de tener 33.33% a 100% */
+                        .column-3{
+                            width: 100%;
+                        }
+                        /* column-4 pasará de tener 25% a 50% */
+                        .column-4{
+                            width: 50%;
+                        }
+                    }</p>
+
+                    <p>Algunos de los parámetros generales que se pueden emplear a la hora de construir las condiciones en las Media Queries:</p>
+
+                        <p><b>width:</b> anchura de la ventana del navegador.</p>
+                        <p><b>height:</b> altura de la ventana del navegador.</p>
+                        <p><b>device-width:</b> anchura de la resolución de pantalla.</p>
+                        <p><b>device-height:</b> altura de la resolución de pantalla.</p>
+                        <p><b>orientation (portrait/landscape):</b> dispositivo en horizontal o en vertical.</p>
+                        <p><b>resolution:</b> densidad de píxeles.</p>
     
 
 </body>
