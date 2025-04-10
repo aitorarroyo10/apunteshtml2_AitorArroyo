@@ -85,15 +85,15 @@
 
                     <br>
 
-                <h3>Comandos git</h3>
+                    <h3>Comandos git</h3>
 
-                    <p><b>git init</b>: Comando de inicialización de repositorios GIT en la ubicación actual.</p>
+                        <p><b>git init</b>: Comando de inicialización de repositorios GIT en la ubicación actual.</p>
 
-                    <p><b>git add</b>: Comando de adición de elementos que van a incluirse en la nueva versión de los archivos del repositorio.</p>
-                    
-                    <p><b>git commit -m ""</b>: Comando para empaquetar archivos con un mensaje.</p>
-                    
-                    <p><b>git push origin main</b>: Comando de sincronización de elementos con la rama.</p>
+                        <p><b>git add</b>: Comando de adición de elementos que van a incluirse en la nueva versión de los archivos del repositorio.</p>
+                        
+                        <p><b>git commit -m ""</b>: Comando para empaquetar archivos con un mensaje.</p>
+                        
+                        <p><b>git push origin main</b>: Comando de sincronización de elementos con la rama.</p>
 
             <br>
 
@@ -137,7 +137,85 @@
 
                         <p>Las barras verticales (|) separan las columnas, el encabezado puede usarse para alinear el texto a la izquierda(:---), al centro (:...:) y a la derecha (---:)</p>
 
-            <h2 id="ApartadoHTML">HTML: Características y etiquetas</h2>
+            <br>
+
+            <br>
+
+            <h2 id="ApartadoHTML">HTML: Características, estructura y etiquetas</h2>
+
+            <h3>Características</h3>
+
+                <p>HTML no es un lenguaje de programación, es un lenguaje de marcado que define la estructura de su contenido. HTML consiste en una serie de elementos que se usan para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera.</p>
+
+                <p>Esto implica que la información a mostrar debe ir en forma de etiqueta para formar elementos que el navegador web sepa interpretar de qué tipo de información se trata y como tal sepa como representarlos.</p>
+
+                <p>Las partes principales de un elemento son:</p>
+
+                <ul>
+                    
+                    <li><p>La etiqueta de apertura:Consiste en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares (< >) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del párrafo-.</p></li>
+
+                    <li><p>La etiqueta de cierre: es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento —en este caso dónde termina el párrafo—.</p></li>
+                    
+                    <li><p>El contenido: este es el contenido del elemento, que en este caso es sólo texto.</p></li>
+                    
+                    <li><p>El elemento: la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento.</p></li>
+
+                </ul>
+
+                <br>
+
+                <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento y deben tener siempre:</p>
+
+                    <ul>
+                        
+                        <li><p>Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos).</p></li>
+                            
+                        <li><p>El nombre del atributo, seguido por un signo de igual (=).</p></li>
+                                
+                        <li><p>Comillas de apertura y de cierre, encerrando el valor del atributo.</p></li>
+
+                    </ul>
+
+                <p>También se pueden colocar elementos dentro de otros elementos. A eso, se le llama anidamiento.</p>
+
+            <h3>Estructura</h3>
+
+                <p>La estructura de un documento HTML se ve así:</p>
+
+                    <img src="imgs/estructurahtml.png" width="700" alt="primero paso">
+
+                <ul>
+
+                    <li><p><b>DOCTYPE:</b> Especifica el tipo de documento</p></li>
+
+                    <li><p><b>html:</b> Elemento html que encierra todo el contenido de la página</p></li>
+
+                    <li><p><b>Head:</b> Actúa como un contenedor de todo lo que se quiera incluir en la página HTML. El contenido no es visible para los que visitan la página. Incluye cosas como palabras clave, descripción de la página, título de la página, icono, etc.</p></li>
+
+                    <li><p><b>Body:</b>Encierra el contenido de la página, ya sea texto, imágenes, vídeos, etc.</p></li>
+
+                </ul>
+
+            <h3>Etiquetas HTML</h3>
+
+                <ul>
+
+                    <li><p><b>Encabezados:</b>Etiquetas de h1 a h6, permiten especificar que ciertas partes del contenido son encabezados o subencabezados</p></li>
+
+                    <li><p><b>Párrafos:</b>Se utilizan párrafos de texto, entendiéndolo como un conjunto de frases relacionadas entre sí.</p></li>
+
+                    <li><p><b>Listas ordenadas:</b>Las listas ordenadas son aquellas en la cual el orden es relevante y los elementos están ordenados numéricamente. Se usa la etiqueta li para separarlos</p></li>
+
+                    <li><p><b>Listas desordenadas:</b>Las listas desordenadas son aquellas en la cual el orden no es relevante y los elementos no están ordenados numéricamente, si no por puntos. Al igual que con las ordenadas, se usa la etiqueta li para separar los elementos.</p></li>
+
+                    <li><p><b>Enlaces:</b>Para convertir algún texto dentro de un párrafo en un vínculo, se encierra el texto en un elemento a. Se añade el elemento a a un href y seañade el valor del atributo con la dirección web con la que conectar al vínculo.</p></li>
+
+                </ul>
+
+
+
+
 
 </body>
 </html>
